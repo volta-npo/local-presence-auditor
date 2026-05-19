@@ -32,11 +32,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/volta-npo/01-local-presence-auditor.git"
+    "url": "git+https://github.com/volta-npo/local-presence-auditor.git"
   },
-  "homepage": "https://volta-npo.github.io/01-local-presence-auditor/",
+  "homepage": "https://volta-npo.github.io/local-presence-auditor/",
   "bugs": {
-    "url": "https://github.com/volta-npo/01-local-presence-auditor/issues"
+    "url": "https://github.com/volta-npo/local-presence-auditor/issues"
   },
   "author": "Volta Open Source <volta.npo@gmail.com>",
   "engines": {
