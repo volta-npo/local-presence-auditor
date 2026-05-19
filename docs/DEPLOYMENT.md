@@ -6,7 +6,7 @@ This repository is deployable in three supported modes.
 
 The default public deployment is GitHub Pages. The app is static and uses local browser storage.
 
-- URL: https://volta-npo.github.io/local-presence-auditor/
+- URL: https://volta-npo.github.io/01-local-presence-auditor/
 - Build command: `npm run build`
 - Output: checked-in static assets at repository root and `src/*.js` compiled from TypeScript
 
