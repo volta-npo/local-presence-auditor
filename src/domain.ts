@@ -76,17 +76,37 @@ export const domain = {
     "Social proof captured",
     "Primary CTA visible",
     "Accessibility quick checks complete",
-    "Top 5 action roadmap generated"
+    "Top 5 action roadmap generated",
+    "Citation accuracy scored",
+    "Mobile speed snapshot captured",
+    "Competitor benchmark noted",
+    "Owner action plan prioritized"
   ],
   "artifacts": [
     "Owner-safe audit report",
     "Impact-effort roadmap",
-    "CSV findings ledger"
+    "CSV findings ledger",
+    "Owner intake questionnaire",
+    "Competitive benchmark",
+    "30-day implementation plan"
   ],
   "checks": [
     "Every failed item needs evidence",
     "URLs must be valid",
-    "Severity must map to customer impact"
+    "Severity must map to customer impact",
+    "NAP mismatches must include source URLs",
+    "Owner action plan requires due dates",
+    "Competitor benchmark requires at least one peer"
   ],
-  "sampleClient": "Riverside Community Bakery"
+  "sampleClient": "Riverside Community Bakery",
+  "saas": {
+    "personas": ["Student audit lead", "Small business owner", "Mentor reviewer"],
+    "stages": [
+      { "name": "Discovery intake", "goal": "Capture owner goals, target customers, and public evidence sources.", "rowPatterns": ["Website|Google|NAP|Social", "Evidence|Citation"] },
+      { "name": "Presence diagnosis", "goal": "Score findability, trust, accessibility, and conversion gaps.", "rowPatterns": ["Reviews|CTA|Accessibility|Mobile|Competitor"] },
+      { "name": "Roadmap handoff", "goal": "Turn audit evidence into prioritized owner actions.", "rowPatterns": ["roadmap|action plan|priority|Owner"] }
+    ],
+    "sampleValues": { "primary-goal": "publish a prioritized 30-day local presence roadmap" },
+    "sampleRows": { "Competitor benchmark noted": "Compared against two nearby bakeries with stronger Maps photos and CTAs", "Owner action plan prioritized": "Roadmap grouped into same-day, 7-day, and 30-day owner tasks" }
+  }
 };
