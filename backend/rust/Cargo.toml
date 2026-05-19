@@ -1,0 +1,13 @@
+[package]
+name = "local_presence_auditor_backend"
+version = "0.1.0"
+edition = "2021"
+description = "Rust release-gate engine for Local Presence Auditor"
+license = "MIT"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "local-presence-auditor-backend"
+path = "src/main.rs"

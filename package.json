@@ -5,11 +5,14 @@
   "type": "module",
   "description": "A zero-login audit that shows a local business exactly where its online footprint is missing, broken, or invisible.",
   "scripts": {
-    "test": "node --test",
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/*.test.js",
     "start": "python3 -m http.server 4173",
-    "validate": "node --test",
-    "certify": "node --test test/v3.test.js",
-    "test:all": "node --test"
+    "validate": "npm test",
+    "certify": "npm run build && node --test test/v3.test.js",
+    "test:all": "npm test",
+    "test:rust": "cargo test --manifest-path backend/rust/Cargo.toml",
+    "test:backend": "npm run test:rust"
   },
   "keywords": [
     "digital presence",
@@ -22,14 +25,18 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/volta-npo/01-local-presence-auditor.git"
+    "url": "git+https://github.com/volta-npo/local-presence-auditor.git"
   },
-  "homepage": "https://volta-npo.github.io/01-local-presence-auditor/",
+  "homepage": "https://volta-npo.github.io/local-presence-auditor/",
   "bugs": {
-    "url": "https://github.com/volta-npo/01-local-presence-auditor/issues"
+    "url": "https://github.com/volta-npo/local-presence-auditor/issues"
   },
   "author": "Volta OSS Division <volta.npo@gmail.com>",
   "engines": {
     "node": ">=20"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "@types/node": "^24.0.0"
   }
 }
